@@ -1,7 +1,5 @@
 package lk.ijse.gdse68.springpossystem.util;
 
-import lk.ijse.gdse68.springpossystem.config.WebAppConfig;
-import lk.ijse.gdse68.springpossystem.config.WebAppConfigRoot;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
@@ -15,7 +13,7 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
      */
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[]{WebAppConfigRoot.class};
+        return new Class[]{};
     }
 
     /**
@@ -23,7 +21,7 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
      */
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[]{WebAppConfig.class};
+        return new Class[]{};
     }
 
     /**

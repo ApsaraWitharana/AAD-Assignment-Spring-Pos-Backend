@@ -1,13 +1,13 @@
 package lk.ijse.gdse68.springpossystem.dao;
 
-import lk.ijse.gdse68.springpossystem.entity.Customer;
+import lk.ijse.gdse68.springpossystem.entity.Orders;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
 /**
  * @author : sachini
- * @date : 2024-10-04
+ * @date : 2024-10-12
  **/
 @Repository
-public interface CustomerDAO extends JpaRepository<Customer,String> {
-    Customer getCustomerEntityById(String id);
+public interface OrdersDAO extends JpaRepository<Orders,String> {
 }
